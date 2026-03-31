@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/IdyBel/wazuh-gitops.git
+    repoURL: https://github.com/wazuh/wazuh-kubernetes.git
     targetRevision: main
-    path: charts/wazuh
+    path: wazuh-managers
   destination:
     server: https://kubernetes.default.svc
     namespace: wazuh
@@ -16,3 +16,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
