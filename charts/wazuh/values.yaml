@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
  repository: wazuh/wazuh-manager
- tag: latest
+ tag: "5.0.0"
  pullPolicy: IfNotPresent
 
 service:
