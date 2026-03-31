@@ -1,0 +1,6 @@
+apiVersion: v2
+name: wazuh
+description: Helm chart base para Wazuh
+type: application
+version: 0.1.0
+appVersion: "4.0.0"
