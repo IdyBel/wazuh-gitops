@@ -12,6 +12,9 @@ spec:
       labels:
         app: {{ include "wazuh.name" . }}
     spec:
+      tolerations:
+        - operator: "Exists"
+          effect: "NoSchedule"
       containers:
         - name: wazuh
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
